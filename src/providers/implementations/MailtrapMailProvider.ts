@@ -11,11 +11,11 @@ export class MailtrapMailProvider implements IMailProvider {
             host: "smtp.mailtrap.io",
             port: 2525,
             auth: {
-                user: "be357ebe7a8f14",
-                pass: "2923dfaa4127f9"
+                user: "yourUser",
+                pass: "yourPassword"
             }
         })
-    };
+    }
 
     async sendMail(message: IMessage): Promise<void> {
         await this.transporter.sendMail({
